@@ -12,6 +12,12 @@
 		C5FF682E1E0613B400399B42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FF682C1E0613B400399B42 /* Main.storyboard */; };
 		C5FF68301E0613B400399B42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FF682F1E0613B400399B42 /* Assets.xcassets */; };
 		C5FF68331E0613B400399B42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FF68311E0613B400399B42 /* LaunchScreen.storyboard */; };
+		C5FF683B1E06141300399B42 /* beersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF683A1E06141300399B42 /* beersVC.swift */; };
+		C5FF683E1E061BDE00399B42 /* BreweryDB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C5FF683D1E061BDE00399B42 /* BreweryDB.framework */; };
+		C5FF68421E062F8B00399B42 /* beerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF68411E062F8B00399B42 /* beerCell.swift */; };
+		C5FF68441E06525400399B42 /* beerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF68431E06525400399B42 /* beerVC.swift */; };
+		C5FF68461E07185B00399B42 /* beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF68451E07185B00399B42 /* beer.swift */; };
+		C5FF68481E07C0BF00399B42 /* default_img.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FF68471E07C0BF00399B42 /* default_img.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		C5FF682F1E0613B400399B42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C5FF68321E0613B400399B42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5FF68341E0613B400399B42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FF683A1E06141300399B42 /* beersVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beersVC.swift; sourceTree = "<group>"; };
+		C5FF683D1E061BDE00399B42 /* BreweryDB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BreweryDB.framework; path = Carthage/Build/iOS/BreweryDB.framework; sourceTree = "<group>"; };
+		C5FF68411E062F8B00399B42 /* beerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beerCell.swift; sourceTree = "<group>"; };
+		C5FF68431E06525400399B42 /* beerVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beerVC.swift; sourceTree = "<group>"; };
+		C5FF68451E07185B00399B42 /* beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = beer.swift; sourceTree = "<group>"; };
+		C5FF68471E07C0BF00399B42 /* default_img.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = default_img.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FF683E1E061BDE00399B42 /* BreweryDB.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 			children = (
 				C5FF68271E0613B400399B42 /* brewTest */,
 				C5FF68261E0613B400399B42 /* Products */,
+				C5FF683C1E061BDE00399B42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +71,24 @@
 				C5FF68281E0613B400399B42 /* AppDelegate.swift */,
 				C5FF682A1E0613B400399B42 /* ViewController.swift */,
 				C5FF682C1E0613B400399B42 /* Main.storyboard */,
+				C5FF68431E06525400399B42 /* beerVC.swift */,
+				C5FF68451E07185B00399B42 /* beer.swift */,
+				C5FF68411E062F8B00399B42 /* beerCell.swift */,
+				C5FF683A1E06141300399B42 /* beersVC.swift */,
+				C5FF68471E07C0BF00399B42 /* default_img.png */,
 				C5FF682F1E0613B400399B42 /* Assets.xcassets */,
 				C5FF68311E0613B400399B42 /* LaunchScreen.storyboard */,
 				C5FF68341E0613B400399B42 /* Info.plist */,
 			);
 			path = brewTest;
+			sourceTree = "<group>";
+		};
+		C5FF683C1E061BDE00399B42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C5FF683D1E061BDE00399B42 /* BreweryDB.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +101,7 @@
 				C5FF68211E0613B400399B42 /* Sources */,
 				C5FF68221E0613B400399B42 /* Frameworks */,
 				C5FF68231E0613B400399B42 /* Resources */,
+				C5FF68401E061D5600399B42 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -127,10 +155,28 @@
 				C5FF68331E0613B400399B42 /* LaunchScreen.storyboard in Resources */,
 				C5FF68301E0613B400399B42 /* Assets.xcassets in Resources */,
 				C5FF682E1E0613B400399B42 /* Main.storyboard in Resources */,
+				C5FF68481E07C0BF00399B42 /* default_img.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C5FF68401E061D5600399B42 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BreweryDB.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C5FF68211E0613B400399B42 /* Sources */ = {
@@ -138,7 +184,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5FF682B1E0613B400399B42 /* ViewController.swift in Sources */,
+				C5FF68461E07185B00399B42 /* beer.swift in Sources */,
+				C5FF683B1E06141300399B42 /* beersVC.swift in Sources */,
 				C5FF68291E0613B400399B42 /* AppDelegate.swift in Sources */,
+				C5FF68421E062F8B00399B42 /* beerCell.swift in Sources */,
+				C5FF68441E06525400399B42 /* beerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +310,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3ZE7PDF7KM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = brewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = macbookpro.brewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,7 +328,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 3ZE7PDF7KM;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = brewTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = macbookpro.brewTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +360,7 @@
 				C5FF68391E0613B400399B42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

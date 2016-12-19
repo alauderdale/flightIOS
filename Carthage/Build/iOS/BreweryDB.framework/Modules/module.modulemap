@@ -1,0 +1,10 @@
+framework module BreweryDB {
+  umbrella header "BreweryDB.h"
+
+  export *
+  module * { export * }
+}
+
+module BreweryDB.Swift {
+    header "BreweryDB-Swift.h"
+}

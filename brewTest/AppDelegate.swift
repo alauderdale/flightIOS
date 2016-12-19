@@ -7,15 +7,16 @@
 //
 
 import UIKit
+import BreweryDB
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        breweryDBApiKey = "6fdc365e6f9342d4b24bf5e60859c5fd"
         return true
     }
 
